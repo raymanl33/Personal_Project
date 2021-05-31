@@ -26,20 +26,81 @@ body {
 
 
 .navbar {
-    grid-area: 'n';
+
     /* display: flex; */
 }
 
-main {
+
+
+.container {
     grid-area: 'b';
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    
+  
 }
-/* .container {
-    grid-area: 'b'
+
+.IU {
+    float: right;
+}
+
+.clock {
+    object-fit: cover;
+}
+.skychair_ryan {
+    object-fit: cover;
+}
+/* .container > img:hover {
+    width: 50%;
+    height: 50%;
 } */
 
-.sunset_shot {
-    /* grid-area: 'b'; */
-    /* width: 30%;
-    height: auto; */
-    
+.downtown {
+    object-fit: cover;
 }
+
+.backyard {
+    object-fit: cover;
+}
+
+.oakridge {
+    object-fit: cover;
+}
+
+.home {
+    object-fit: cover;
+}
+.sunset_shot {
+
+    object-fit: cover;
+}
+
+.fire {
+    object-fit: cover;
+}
+/* 
+@media screen and (min-width: 640px) {
+    .IU {
+        float: center;
+    }
+    
+    
+    .skychair_ryan {
+        float: center;
+    }
+    /* .container > img:hover {
+        width: 50%;
+        height: 50%;
+    } */
+    
+    /* .downtown {
+        float: center;
+    }
+    
+    
+    .home {
+        float: center;
+    }
+} */ 
