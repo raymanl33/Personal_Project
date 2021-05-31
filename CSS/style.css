@@ -1,0 +1,45 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(96, 148, 194);
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: 33%, 33%, 33%;
+    grid-template-rows: 1rem, 1fr, 1fr;
+    grid-template-areas: 
+    'h'
+    'b' 
+    'b';
+    width: 100vw;
+    height: 100vh;
+    grid-auto-flow: column;
+    gap: 1em;
+}
+
+.header {
+    grid-area: 'h';
+    text-align: center;
+}
+
+
+.navbar {
+    grid-area: 'n';
+    /* display: flex; */
+}
+
+main {
+    grid-area: 'b';
+}
+/* .container {
+    grid-area: 'b'
+} */
+
+.sunset_shot {
+    /* grid-area: 'b'; */
+    /* width: 30%;
+    height: auto; */
+    
+}
