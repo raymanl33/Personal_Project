@@ -12,6 +12,7 @@
 h1 {
     font-size: clamp(1rem, 3vw + 1rem, 4rem);
     font-family: 'Roboto Mono', monospace;
+  
     position: relative;
     width: max-content;
 }
@@ -65,7 +66,7 @@ body {
     grid-template-areas: 
     'h'
     'b' 
-    'b';
+    'f';
     width: 100vw;
     height: 100vh;
     grid-auto-flow: column;
@@ -83,6 +84,7 @@ body {
    transform: translateY(3rem);
    animation: fadeInUp 2s ease 
    calc(var(--typewriterSpeed) + 2s )forwards;
+   list-style: none;
 }
 
 
@@ -97,141 +99,22 @@ body {
   
 }
 
-.taipei {
-    float: right;
-    transition: transform .2s;
-}
-.taipei:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5); 
-  }
-
-.clock {
+.hover {
     object-fit: cover;
     transition: transform .2s;
 }
-
-.clock:hover {
+.hover:hover {
     -ms-transform: scale(1.5); /* IE 9 */
     -webkit-transform: scale(1.5); /* Safari 3-8 */
     transform: scale(1.5); 
   }
 
-.skychair_ryan {
-    object-fit: cover;
-    transition: transform .2s;
+footer {
+    grid-area: 'f';
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
 }
-
-.skychair_ryan:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5); 
-  }
-
-
-.downtown {
-    object-fit: cover;
-    transition: transform .2s;
-}
-
-.downtown:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5); 
-  }
-
-
-.backyard {
-    object-fit: cover;
-    transition: transform .2s;
-}
-
-.backyard:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5); 
-  }
-
-
-.oakridge {
-    object-fit: cover;
-    transition: transform .2s;
-}
-
-.oakridge:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5); 
-  }
-
-
-.home {
-    object-fit: cover;
-    transition: transform .2s;
-}
-
-.home:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5); 
-  }
-
-.sunset_shot {
-    transition: transform .2s;
-    object-fit: cover;
-}
-
-.sunset_shot:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5); 
-  }
-
-
-.fire {
-    object-fit: cover;
-    transition: transform .2s;
-}
-
-.fire:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5); 
-  }
-
-
-.van_house {
-    object-fit: cover;
-    transition: transform .2s;
-}
-
-.van_house:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5); 
-  }
-
-
-.korea_uni {
-    object-fit: cover;
-    transition: transform .2s;
-}
-.korea_uni:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5); 
-  }
-
-.downtown2 {
-    transition: transform .2s;
-}
-
-.downtown2:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5); 
-  }
 
 /* 
 @media screen and (min-width: 640px) {
