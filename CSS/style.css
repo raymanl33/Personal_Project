@@ -109,6 +109,13 @@ body {
     transform: scale(1.5); 
   }
 
+.Raymond {
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2s ease 
+    calc(var(--typewriterSpeed) + 2s )forwards;
+}
+
 footer {
     grid-area: 'f';
     text-align: center;
