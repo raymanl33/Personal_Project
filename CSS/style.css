@@ -30,14 +30,14 @@ h1::after {
 
 h1::before {
     background:  #FBE7C6;
-    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCaracters)) 1s forwards;
+    animation: typewriter var(--typewriterSpeed) steps(14) 1s forwards;
 }
 
 h1::after {
     width: 0.125em;
     background: black;
-    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCaracters)) 1s forwards, 
-    blink 750ms steps(var(--typewriterCaracters)) infinite;
+    animation: typewriter var(--typewriterSpeed) steps(14) 1s forwards, 
+    blink 750ms steps(14) infinite;
 }
 
 @keyframes typewriter {
@@ -85,15 +85,13 @@ body {
    animation: fadeInUp 2s ease 
    calc(var(--typewriterSpeed) + 2s )forwards;
    list-style-type: none;
-
-   
 }
 
 li {
     float: inherit;
     display:inline;
-
 }
+
 
 li:visited {
     color: pink;
