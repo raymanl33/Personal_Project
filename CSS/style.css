@@ -122,7 +122,7 @@ li:visited {
     transform: scale(1.5); 
   }
 
-.Raymond {
+.homepage {
     opacity: 0;
     transform: translateY(3rem);
     animation: fadeInUp 2s ease 
