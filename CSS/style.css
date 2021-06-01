@@ -1,6 +1,7 @@
 :root {
     --typewriterSpeed: 6s;
     --typewriterCaracters: 22;
+    --typewriterCaractersIphone: 14;
 }
 
 * {
@@ -28,16 +29,28 @@ h1::after {
 
 }
 
-h1::before {
+.about::before {
     background:  #FBE7C6;
-    animation: typewriter var(--typewriterSpeed) steps(14) 1s forwards;
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCaracters)) 1s forwards;
 }
 
-h1::after {
+.about::after {
     width: 0.125em;
     background: black;
-    animation: typewriter var(--typewriterSpeed) steps(14) 1s forwards, 
-    blink 750ms steps(14) infinite;
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCaracters)) 1s forwards, 
+    blink 750ms steps(var(--typewriterCaracters)) infinite;
+}
+
+.iphone::before {
+    background:  #FBE7C6;
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCaractersIphone)) 1s forwards;
+}
+
+.iphone::after {
+    width: 0.125em;
+    background: black;
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCaractersIphone)) 1s forwards, 
+    blink 750ms steps(var(--typewriterCaractersIphone)) infinite;
 }
 
 @keyframes typewriter {
