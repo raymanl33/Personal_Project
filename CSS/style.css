@@ -103,6 +103,11 @@ body {
 li {
     float: inherit;
     display:inline;
+    padding-right: 10px;
+}
+
+a {
+    text-decoration: none;
 }
 
 
@@ -138,6 +143,10 @@ li:visited {
     transform: translateY(3rem);
     animation: fadeInUp 2s ease 
     calc(var(--typewriterSpeed) + 2s )forwards;
+}
+
+p {
+    padding: 10px;
 }
 
 footer {
