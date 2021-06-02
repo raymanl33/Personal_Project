@@ -11,6 +11,7 @@
 }
 
 h1 {
+    margin: auto;
     font-size: clamp(1rem, 3vw + 1rem, 4rem);
     font-family: 'Roboto Mono', monospace;
     position: relative;
@@ -146,7 +147,11 @@ li:visited {
 }
 
 p {
+    grid-area: 'b';
+    margin: auto;
     padding: 10px;
+    /* word-wrap: break-word; */
+    /* width:500px; */
 }
 
 footer {
@@ -154,6 +159,7 @@ footer {
     text-align: center;
     font-family: 'Caveat', cursive;
     font-size: 20px;
+    padding:inherit;
 }
 
 /* 
