@@ -7,7 +7,21 @@
 * {
     margin: 0px;
     padding: 0px;
-    background-color: #FBE7C6;
+    background-color: #eff2f1;
+}
+
+.dark-mode {
+    background-color: #4a7b9d;
+    color: white;
+}
+
+.fas fa-adjust {
+    border:none;
+}
+
+button {
+    border: none;
+    background-color: #eff2f1;
 }
 
 h1 {
@@ -31,7 +45,7 @@ h1::after {
 }
 
 .about::before {
-    background:  #FBE7C6;
+    background:  #eff2f1;
     animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCaracters)) 1s forwards;
 }
 
@@ -43,7 +57,7 @@ h1::after {
 }
 
 .iphone::before {
-    background:  #FBE7C6;
+    background:  #eff2f1;
     animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCaractersIphone)) 1s forwards;
 }
 
@@ -159,7 +173,7 @@ footer {
     text-align: center;
     font-family: 'Caveat', cursive;
     font-size: 20px;
-    padding:inherit;
+    padding: 20px;
 }
 
 /* 
