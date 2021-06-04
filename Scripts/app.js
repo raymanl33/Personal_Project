@@ -50,3 +50,12 @@ function ChangeTheme() {
     
     }
 }
+
+
+function dropdownMenu() {
+    let HomeMenu = document.querySelector('#HomeDropdown')
+    HomeMenu.classList.toggle("show")
+}
+
+
+

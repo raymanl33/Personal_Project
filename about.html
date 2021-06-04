@@ -16,14 +16,19 @@
 </head>
 <body>
     <div class='header'>
-        <nav>
         <h1 class='iphone'>Shot on iPhone</h1>
-        <ul class='nav'>
-            <li><a href='index.html'>HOME</a></li>
-            <li><a href="about.html">Shot on iPhone</a></li>
-            <li><button class="fas fa-adjust" onclick="ChangeTheme()"></button></li>
-        </ul>
-    </div>
+        <nav class='nav'>
+        <a class='home' href='index.html'>Home</a>
+        <div class='dropdown'>
+            <button onclick='dropdownMenu()' class='dropbtn'>Shot on iPhone</button>
+            <div id='HomeDropdown' class='dropdown-content'>
+                <a href='#'>Taipei</a>
+                <a href="#">Vancouver</a>
+                <a href="#">Vancouver</a>
+                <a href="#">Vancouver</a>
+            </div>
+            <button class="fas fa-adjust" onclick="ChangeTheme()"></button>
+        </div>
 
         
         </nav>
