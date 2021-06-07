@@ -10,6 +10,8 @@ let plant = document.querySelector('.oakridge_plant');
 let fire = document.querySelector('.fire');
 let van_house = document.querySelector('.van_house');
 let korea_uni = document.querySelector('.korea_uni');
+let h2 = document.querySelector('h2');
+let p = document.querySelectorAll('p');
 
 function ChangeTheme() {
     let element = document.body;
@@ -76,45 +78,169 @@ function ShotoniPhone() {
     show.addEventListener('click', (e)=> {
         let image = e.target.innerText;
         if (image === 'Taipei') {
-            Taipei();
+            remove_all();
             Taipei_Content();
         } else if (image === 'All Images') {
-            console.log('yes')
+            remove_all();
+            addimages();
         } else if (image === 'Arbutus') {
-            Arbutus();
+            remove_all();
             Arbutus_Content();
         } else if (image === 'Clock Tower') {
-            ClockTower();
+            remove_all();
             ClockTower_Content();
         } else if (image === 'Skychair') {
-            Skychair();
+            remove_all();
             Skychair_Content();
         } else if (image === 'Backyard') {
-            Backyard();
+            remove_all();
             Backyard_Content();
         } else if (image === 'Mount Pleasant Graffiti') {
-            Graffiti();
+            remove_all();
             Graffiti_Content();
         } else if (image === 'Mount Pleasant Apartments') {
-            Apartments();
+            remove_all();
             Apartments_Contents();
         } else if (image === 'Oakridge View') {
-            Oakridge();
+            remove_all();
             Oakridge_Content();
         } else if (image === 'Plant') {
-            Plant();
+            remove_all();
             Plant_Content();
         } else if (image === 'Fire Night') {
-            Fire();
+            remove_all();
             Fire_Content();
         } else if (image === 'Vancouver House') {
-            VanHouse();
+            remove_all();
             VanHouse_Content();
         } else if (image === 'Kyung Hee University') {
-            Ko_uni();
+            remove_all();
             Ko_uni_Content();
+            
         }
     })
+}
+
+function remove_all() {
+    if (p.length === 0 || h2 === null) {
+        clock.remove();
+        taipei.remove();
+        sunset_shot.remove();
+        skychair_ryan.remove();
+        backyard.remove();
+        downtown.remove();
+        downtown2.remove();
+        oakridge.remove();
+        plant.remove();
+        fire.remove();
+        van_house.remove();
+        korea_uni.remove();
+    } else { 
+        while (p.length > 0) {
+            p.pop()
+        }
+      
+        h2.remove();
+        clock.remove();
+        taipei.remove();
+        sunset_shot.remove();
+        skychair_ryan.remove();
+        backyard.remove();
+        downtown.remove();
+        downtown2.remove();
+        oakridge.remove();
+        plant.remove();
+        fire.remove();
+        van_house.remove();
+        korea_uni.remove();
+    }
+}
+
+function addimages () {
+    let container = document.querySelector('.container');
+    let taipeiIMG = document.createElement('img');
+    taipeiIMG.setAttribute('src', 'Images/taipei.jpeg');
+    taipeiIMG.setAttribute('width', '400');
+    taipeiIMG.setAttribute('alt', 'Rush hour in Taipei');
+    taipeiIMG.classList.add('taipei', 'hover');
+    container.appendChild(taipeiIMG);
+
+    let SunsetIMG = document.createElement('img');
+    SunsetIMG.setAttribute('src', 'Images/IMG_2038.jpeg');
+    SunsetIMG.setAttribute('width', '400');
+    SunsetIMG.setAttribute('alt', 'sunset in Vancouver');
+    SunsetIMG.classList.add('sunset_shot', 'hover');
+    container.appendChild(SunsetIMG);
+
+    let ClockIMG = document.createElement('img');
+    ClockIMG.setAttribute('src', 'Images/clock.jpeg');
+    ClockIMG.setAttribute('width', '400');
+    ClockIMG.setAttribute('alt', 'clock in Vancouver');
+    ClockIMG.classList.add('clock', 'hover');
+    container.appendChild(ClockIMG);
+
+    let RyanIMG = document.createElement('img');
+    RyanIMG.setAttribute('src', 'Images/skychair_ryan.jpeg');
+    RyanIMG.setAttribute('width', '400');
+    RyanIMG.setAttribute('alt', 'Snowboarding at Cypress');
+    RyanIMG.classList.add('skychair_ryan', 'hover');
+    container.appendChild(RyanIMG);
+
+    let BackyardIMG = document.createElement('img');
+    BackyardIMG.setAttribute('src', 'Images/7500_backyard.jpeg');
+    BackyardIMG.setAttribute('width', '400');
+    BackyardIMG.setAttribute('alt', 'Backyard');
+    BackyardIMG.classList.add('backyard', 'hover');
+    container.appendChild(BackyardIMG);
+
+    let DowntownIMG = document.createElement('img');
+    DowntownIMG.setAttribute('src', 'Images/Downtown.jpeg');
+    DowntownIMG.setAttribute('width', '400');
+    DowntownIMG.setAttribute('alt', 'Downtown');
+    DowntownIMG.classList.add('downtown', 'hover');
+    container.appendChild(DowntownIMG);
+
+    let Downtown2IMG = document.createElement('img');
+    Downtown2IMG.setAttribute('src', 'Images/Downtown2.jpeg');
+    Downtown2IMG.setAttribute('width', '400');
+    Downtown2IMG.setAttribute('alt', 'Downtown');
+    Downtown2IMG.classList.add('downtown2', 'hover');
+    container.appendChild(Downtown2IMG);
+
+    let OakridgeIMG = document.createElement('img');
+    OakridgeIMG.setAttribute('src', 'Images/oakridge.jpeg');
+    OakridgeIMG.setAttribute('width', '400');
+    OakridgeIMG.setAttribute('alt', 'Oakridge');
+    OakridgeIMG.classList.add('oakridge', 'hover');
+    container.appendChild(OakridgeIMG);
+
+    let PlantIMG = document.createElement('img');
+    PlantIMG.setAttribute('src', 'Images/plant.jpeg');
+    PlantIMG.setAttribute('width', '400');
+    PlantIMG.setAttribute('alt', 'Oakridge Plant');
+    PlantIMG.classList.add('oakridge_plant', 'hover');
+    container.appendChild(PlantIMG);
+
+    let FireIMG = document.createElement('img');
+    FireIMG.setAttribute('src', 'Images/fire.jpeg');
+    FireIMG.setAttribute('width', '400');
+    FireIMG.setAttribute('alt', 'Fire in Richmond');
+    FireIMG.classList.add('fire', 'hover');
+    container.appendChild(FireIMG);
+
+    let VanHouseIMG = document.createElement('img');
+    VanHouseIMG.setAttribute('src', 'Images/van_house.jpeg');
+    VanHouseIMG.setAttribute('width', '400');
+    VanHouseIMG.setAttribute('alt', 'Vancouver House');
+    VanHouseIMG.classList.add('van_house', 'hover');
+    container.appendChild(VanHouseIMG);
+
+    let KoreaUniIMG = document.createElement('img');
+    KoreaUniIMG.setAttribute('src', 'Images/korea_uni.jpeg');
+    KoreaUniIMG.setAttribute('width', '400');
+    KoreaUniIMG.setAttribute('alt', 'Kyung Hee University');
+    KoreaUniIMG.classList.add('korea_uni', 'hover');
+    container.appendChild(KoreaUniIMG);
 }
 
 function Ko_uni_Content() {
@@ -126,21 +252,13 @@ function Ko_uni_Content() {
     h2.appendChild(h2_text);
     container.appendChild(h2);
     p.appendChild(p_text);
+    let KoreaUniIMG = document.createElement('img');
+    KoreaUniIMG.setAttribute('src', 'Images/korea_uni.jpeg');
+    KoreaUniIMG.setAttribute('width', '400');
+    KoreaUniIMG.setAttribute('alt', 'Kyung Hee University');
+    KoreaUniIMG.classList.add('korea_uni', 'hover');
+    container.appendChild(KoreaUniIMG);
     container.appendChild(p);
-}
-
-function Ko_uni() {
-    clock.remove();
-    taipei.remove();
-    sunset_shot.remove();
-    skychair_ryan.remove();
-    backyard.remove();
-    downtown.remove();
-    downtown2.remove();
-    oakridge.remove();
-    plant.remove();
-    fire.remove();
-    van_house.remove();
 }
 
 function VanHouse_Content() {
@@ -152,22 +270,15 @@ function VanHouse_Content() {
     h2.appendChild(h2_text);
     container.appendChild(h2);
     p.appendChild(p_text);
+    let VanHouseIMG = document.createElement('img');
+    VanHouseIMG.setAttribute('src', 'Images/van_house.jpeg');
+    VanHouseIMG.setAttribute('width', '400');
+    VanHouseIMG.setAttribute('alt', 'Vancouver House');
+    VanHouseIMG.classList.add('van_house', 'hover');
+    container.appendChild(VanHouseIMG);
     container.appendChild(p);
 }
 
-function VanHouse() {
-    clock.remove();
-    taipei.remove();
-    sunset_shot.remove();
-    skychair_ryan.remove();
-    backyard.remove();
-    downtown.remove();
-    downtown2.remove();
-    oakridge.remove();
-    plant.remove();
-    fire.remove();
-    korea_uni.remove();
-}
 
 function Fire_Content() {
     let container = document.querySelector('.container')
@@ -178,22 +289,15 @@ function Fire_Content() {
     h2.appendChild(h2_text);
     container.appendChild(h2);
     p.appendChild(p_text);
+    let FireIMG = document.createElement('img');
+    FireIMG.setAttribute('src', 'Images/fire.jpeg');
+    FireIMG.setAttribute('width', '400');
+    FireIMG.setAttribute('alt', 'Fire in Richmond');
+    FireIMG.classList.add('fire', 'hover');
+    container.appendChild(FireIMG);
     container.appendChild(p);
 }
 
-function Fire() {
-    clock.remove();
-    taipei.remove();
-    sunset_shot.remove();
-    skychair_ryan.remove();
-    backyard.remove();
-    downtown.remove();
-    downtown2.remove();
-    oakridge.remove();
-    plant.remove();
-    van_house.remove();
-    korea_uni.remove();
-}
 
 function Plant_Content() {
     let container = document.querySelector('.container')
@@ -204,22 +308,16 @@ function Plant_Content() {
     h2.appendChild(h2_text);
     container.appendChild(h2);
     p.appendChild(p_text);
+    let PlantIMG = document.createElement('img');
+    PlantIMG.setAttribute('src', 'Images/plant.jpeg');
+    PlantIMG.setAttribute('width', '400');
+    PlantIMG.setAttribute('alt', 'Oakridge Plant');
+    PlantIMG.classList.add('oakridge_plant', 'hover');
+    container.appendChild(PlantIMG);
     container.appendChild(p);
 }
 
-function Plant() {
-    clock.remove();
-    taipei.remove();
-    sunset_shot.remove();
-    skychair_ryan.remove();
-    backyard.remove();
-    downtown.remove();
-    downtown2.remove();
-    oakridge.remove();
-    fire.remove();
-    van_house.remove();
-    korea_uni.remove();
-}
+
 
 function Oakridge_Content() {
     let container = document.querySelector('.container')
@@ -230,22 +328,16 @@ function Oakridge_Content() {
     h2.appendChild(h2_text);
     container.appendChild(h2);
     p.appendChild(p_text);
+    let OakridgeIMG = document.createElement('img');
+    OakridgeIMG.setAttribute('src', 'Images/oakridge.jpeg');
+    OakridgeIMG.setAttribute('width', '400');
+    OakridgeIMG.setAttribute('alt', 'Oakridge');
+    OakridgeIMG.classList.add('oakridge', 'hover');
+    container.appendChild(OakridgeIMG);
     container.appendChild(p);
 }
 
-function Oakridge() {
-    clock.remove();
-    taipei.remove();
-    sunset_shot.remove();
-    skychair_ryan.remove();
-    backyard.remove();
-    downtown.remove();
-    downtown2.remove();
-    plant.remove();
-    fire.remove();
-    van_house.remove();
-    korea_uni.remove();
-}
+
 
 function Apartments_Contents() {
     let container = document.querySelector('.container')
@@ -256,22 +348,15 @@ function Apartments_Contents() {
     h2.appendChild(h2_text);
     container.appendChild(h2);
     p.appendChild(p_text);
+    let Downtown2IMG = document.createElement('img');
+    Downtown2IMG.setAttribute('src', 'Images/Downtown2.jpeg');
+    Downtown2IMG.setAttribute('width', '400');
+    Downtown2IMG.setAttribute('alt', 'Downtown');
+    Downtown2IMG.classList.add('downtown2', 'hover');
+    container.appendChild(Downtown2IMG);
     container.appendChild(p);
 }
 
-function Apartments() {
-    clock.remove();
-    taipei.remove();
-    sunset_shot.remove();
-    skychair_ryan.remove();
-    backyard.remove();
-    downtown.remove();
-    oakridge.remove();
-    plant.remove();
-    fire.remove();
-    van_house.remove();
-    korea_uni.remove();
-}
 
 function Graffiti_Content() {
     let container = document.querySelector('.container')
@@ -282,37 +367,15 @@ function Graffiti_Content() {
     h2.appendChild(h2_text);
     container.appendChild(h2);
     p.appendChild(p_text);
+    let DowntownIMG = document.createElement('img');
+    DowntownIMG.setAttribute('src', 'Images/Downtown.jpeg');
+    DowntownIMG.setAttribute('width', '400');
+    DowntownIMG.setAttribute('alt', 'Downtown');
+    DowntownIMG.classList.add('downtown', 'hover');
+    container.appendChild(DowntownIMG);
     container.appendChild(p);
 }
 
-
-function Graffiti() {
-    clock.remove();
-    taipei.remove();
-    sunset_shot.remove();
-    skychair_ryan.remove();
-    backyard.remove();
-    downtown2.remove();
-    oakridge.remove();
-    plant.remove();
-    fire.remove();
-    van_house.remove();
-    korea_uni.remove();
-}
-
-function Backyard() {
-    clock.remove();
-    taipei.remove();
-    sunset_shot.remove();
-    skychair_ryan.remove();
-    downtown.remove();
-    downtown2.remove();
-    oakridge.remove();
-    plant.remove();
-    fire.remove();
-    van_house.remove();
-    korea_uni.remove();
-}
 
 function Backyard_Content() {
     let container = document.querySelector('.container')
@@ -323,6 +386,12 @@ function Backyard_Content() {
     h2.appendChild(h2_text);
     container.appendChild(h2);
     p.appendChild(p_text);
+    let BackyardIMG = document.createElement('img');
+    BackyardIMG.setAttribute('src', 'Images/7500_backyard.jpeg');
+    BackyardIMG.setAttribute('width', '400');
+    BackyardIMG.setAttribute('alt', 'Backyard');
+    BackyardIMG.classList.add('backyard', 'hover');
+    container.appendChild(BackyardIMG);
     container.appendChild(p);
 }
 
@@ -335,22 +404,16 @@ function Skychair_Content() {
     h2.appendChild(h2_text);
     container.appendChild(h2);
     p.appendChild(p_text);
+    let RyanIMG = document.createElement('img');
+    RyanIMG.setAttribute('src', 'Images/skychair_ryan.jpeg');
+    RyanIMG.setAttribute('width', '400');
+    RyanIMG.setAttribute('alt', 'Snowboarding at Cypress');
+    RyanIMG.classList.add('skychair_ryan', 'hover');
+    container.appendChild(RyanIMG);
     container.appendChild(p);
 }
 
-function Skychair() {
-    clock.remove();
-    taipei.remove();
-    sunset_shot.remove();
-    backyard.remove();
-    downtown.remove();
-    downtown2.remove();
-    oakridge.remove();
-    plant.remove();
-    fire.remove();
-    van_house.remove();
-    korea_uni.remove();
-}
+
 
 
 function ClockTower_Content() {
@@ -362,22 +425,15 @@ function ClockTower_Content() {
     h2.appendChild(h2_text);
     container.appendChild(h2);
     p.appendChild(p_text);
+    let ClockIMG = document.createElement('img');
+    ClockIMG.setAttribute('src', 'Images/clock.jpeg');
+    ClockIMG.setAttribute('width', '400');
+    ClockIMG.setAttribute('alt', 'clock in Vancouver');
+    ClockIMG.classList.add('clock', 'hover');
+    container.appendChild(ClockIMG);
     container.appendChild(p);
 }
 
-function ClockTower() {
-    taipei.remove();
-    sunset_shot.remove();
-    skychair_ryan.remove();
-    backyard.remove();
-    downtown.remove();
-    downtown2.remove();
-    oakridge.remove();
-    plant.remove();
-    fire.remove();
-    van_house.remove();
-    korea_uni.remove();
-}
 
 function Arbutus_Content() {
     let container = document.querySelector('.container')
@@ -388,23 +444,16 @@ function Arbutus_Content() {
     h2.appendChild(h2_text);
     container.appendChild(h2);
     p.appendChild(p_text);
+    let SunsetIMG = document.createElement('img');
+    SunsetIMG.setAttribute('src', 'Images/IMG_2038.jpeg');
+    SunsetIMG.setAttribute('width', '400');
+    SunsetIMG.setAttribute('alt', 'sunset in Vancouver');
+    SunsetIMG.classList.add('sunset_shot', 'hover');
+    container.appendChild(SunsetIMG);
     container.appendChild(p);
 
 }
 
-function Arbutus() {
-    taipei.remove();
-    clock.remove();
-    skychair_ryan.remove();
-    backyard.remove();
-    downtown.remove();
-    downtown2.remove();
-    oakridge.remove();
-    plant.remove();
-    fire.remove();
-    van_house.remove();
-    korea_uni.remove();
-}
 
 
 function Taipei_Content() {
@@ -416,23 +465,16 @@ function Taipei_Content() {
     h2.appendChild(h2_text);
     container.appendChild(h2);
     p.appendChild(p_text);
+    let taipeiIMG = document.createElement('img');
+    taipeiIMG.setAttribute('src', 'Images/taipei.jpeg');
+    taipeiIMG.setAttribute('width', '400');
+    taipeiIMG.setAttribute('alt', 'Rush hour in Taipei');
+    taipeiIMG.classList.add('taipei', 'hover');
+    container.appendChild(taipeiIMG);
     container.appendChild(p);
 
 }
 
-function Taipei() {
-    sunset_shot.remove();
-    clock.remove();
-    skychair_ryan.remove();
-    backyard.remove();
-    downtown.remove();
-    downtown2.remove();
-    oakridge.remove();
-    plant.remove();
-    fire.remove();
-    van_house.remove();
-    korea_uni.remove();
-}
 
 function remove_taipei() {
     let h2 = document.querySelector('h2');
