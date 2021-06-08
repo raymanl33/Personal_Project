@@ -151,7 +151,6 @@ function remove_all() {
         korea_uni.remove();
     } else if (p != null || h2 != null) { 
         console.log('no')
-        
         p.remove();
         h2.remove();
         clock.remove();
