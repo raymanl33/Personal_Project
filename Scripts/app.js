@@ -135,7 +135,7 @@ function ShotoniPhone() {
 }
 
 function remove_all() {
-    if (p === null || h2 === null) {
+    if (document.querySelector('p') === null || document.querySelector('h2') === null) {
         console.log('yes')
         clock.remove();
         taipei.remove();
@@ -149,10 +149,10 @@ function remove_all() {
         fire.remove();
         van_house.remove();
         korea_uni.remove();
-    } else if (p != null || h2 != null) { 
+    } else if (document.querySelector('p') != null || document.querySelector('h2') != null) { 
         console.log('no')
-        p.remove();
-        h2.remove();
+        document.querySelector('p').remove();
+        document.querySelector('h2').remove();
         clock.remove();
         taipei.remove();
         sunset_shot.remove();
