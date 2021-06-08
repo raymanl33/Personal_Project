@@ -136,24 +136,24 @@ function ShotoniPhone() {
 
 function remove_all() {
     if (document.querySelector('p') === null || document.querySelector('h2') === null) {
-        console.log('yes')
-        clock.remove();
-        taipei.remove();
-        sunset_shot.remove();
-        skychair_ryan.remove();
-        backyard.remove();
-        downtown.remove();
-        downtown2.remove();
-        oakridge.remove();
-        plant.remove();
-        fire.remove();
-        van_house.remove();
-        korea_uni.remove();
+        console.log('NULL')
+        document.querySelector('.clock').remove();
+        document.querySelector('.taipei').remove();
+        document.querySelector('.sunset_shot').remove();
+        document.querySelector('.skychair_ryan').remove();
+        document.querySelector('.backyard').remove();
+        document.querySelector('.downtown').remove();
+        document.querySelector('.downtown2').remove();
+        document.querySelector('.oakridge').remove();
+        document.querySelector('.oakridge_plant').remove();
+        document.querySelector('.fire').remove();
+        document.querySelector('.van_house').remove();
+        document.querySelector('.korea_uni').remove();
     } else if (document.querySelector('p') != null || document.querySelector('h2') != null) { 
-        console.log('no')
+        console.log('NOT NULL')
         document.querySelector('p').remove();
         document.querySelector('h2').remove();
-        clock.remove();
+        document.querySelector('.clock').remove();
         taipei.remove();
         sunset_shot.remove();
         skychair_ryan.remove();
