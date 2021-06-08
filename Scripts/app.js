@@ -1,3 +1,4 @@
+
 let taipei = document.querySelector('.taipei');
 let sunset_shot = document.querySelector('.sunset_shot');
 let clock = document.querySelector('.clock');
@@ -11,7 +12,7 @@ let fire = document.querySelector('.fire');
 let van_house = document.querySelector('.van_house');
 let korea_uni = document.querySelector('.korea_uni');
 let h2 = document.querySelector('h2');
-let p = document.querySelectorAll('p');
+let p = document.querySelector('p');
 
 function ChangeTheme() {
     let element = document.body;
@@ -80,49 +81,62 @@ function ShotoniPhone() {
         if (image === 'Taipei') {
             remove_all();
             Taipei_Content();
+            e.stopPropagation();
         } else if (image === 'All Images') {
             remove_all();
             addimages();
+            e.stopPropagation();
         } else if (image === 'Arbutus') {
             remove_all();
             Arbutus_Content();
+            e.stopPropagation();
         } else if (image === 'Clock Tower') {
             remove_all();
             ClockTower_Content();
+            e.stopPropagation();
         } else if (image === 'Skychair') {
             remove_all();
             Skychair_Content();
+            e.stopPropagation();
         } else if (image === 'Backyard') {
             remove_all();
             Backyard_Content();
+            e.stopPropagation();
         } else if (image === 'Mount Pleasant Graffiti') {
             remove_all();
             Graffiti_Content();
+            e.stopPropagation();
         } else if (image === 'Mount Pleasant Apartments') {
             remove_all();
             Apartments_Contents();
+            e.stopPropagation();
         } else if (image === 'Oakridge View') {
             remove_all();
             Oakridge_Content();
+            e.stopPropagation();
         } else if (image === 'Plant') {
             remove_all();
             Plant_Content();
+            e.stopPropagation();
         } else if (image === 'Fire Night') {
             remove_all();
             Fire_Content();
+            e.stopPropagation();
         } else if (image === 'Vancouver House') {
             remove_all();
             VanHouse_Content();
+            e.stopPropagation();
         } else if (image === 'Kyung Hee University') {
             remove_all();
             Ko_uni_Content();
-            
+            e.stopPropagation();
         }
     })
 }
 
 function remove_all() {
-    if (p.length === 0 || h2 === null) {
+    if (p === null || h2 === null) {
+        console.log('yes')
         clock.remove();
         taipei.remove();
         sunset_shot.remove();
@@ -135,11 +149,10 @@ function remove_all() {
         fire.remove();
         van_house.remove();
         korea_uni.remove();
-    } else { 
-        while (p.length > 0) {
-            p.pop()
-        }
-      
+    } else if (p != null || h2 != null) { 
+        console.log('no')
+        
+        p.remove();
         h2.remove();
         clock.remove();
         taipei.remove();
