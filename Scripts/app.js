@@ -78,58 +78,46 @@ function ShotoniPhone() {
     let show = document.querySelector('.show');
     show.addEventListener('click', (e)=> {
         let image = e.target.innerText;
+        e.stopPropagation();
         if (image === 'Taipei') {
             remove_all();
             Taipei_Content();
-            e.stopPropagation();
         } else if (image === 'All Images') {
             remove_all();
             addimages();
-            e.stopPropagation();
         } else if (image === 'Arbutus') {
             remove_all();
             Arbutus_Content();
-            e.stopPropagation();
         } else if (image === 'Clock Tower') {
             remove_all();
             ClockTower_Content();
-            e.stopPropagation();
         } else if (image === 'Skychair') {
             remove_all();
             Skychair_Content();
-            e.stopPropagation();
         } else if (image === 'Backyard') {
             remove_all();
             Backyard_Content();
-            e.stopPropagation();
         } else if (image === 'Mount Pleasant Graffiti') {
             remove_all();
             Graffiti_Content();
-            e.stopPropagation();
         } else if (image === 'Mount Pleasant Apartments') {
             remove_all();
             Apartments_Contents();
-            e.stopPropagation();
         } else if (image === 'Oakridge View') {
             remove_all();
             Oakridge_Content();
-            e.stopPropagation();
         } else if (image === 'Plant') {
             remove_all();
             Plant_Content();
-            e.stopPropagation();
         } else if (image === 'Fire Night') {
             remove_all();
             Fire_Content();
-            e.stopPropagation();
         } else if (image === 'Vancouver House') {
             remove_all();
             VanHouse_Content();
-            e.stopPropagation();
         } else if (image === 'Kyung Hee University') {
             remove_all();
             Ko_uni_Content();
-            e.stopPropagation();
         }
     })
 }
@@ -153,18 +141,37 @@ function remove_all() {
         console.log('NOT NULL')
         document.querySelector('p').remove();
         document.querySelector('h2').remove();
+        imagenullabilityCheck();
+    }
+}
+
+function imagenullabilityCheck() {
+    if (document.querySelector('.clock') != null) {
         document.querySelector('.clock').remove();
-        taipei.remove();
-        sunset_shot.remove();
-        skychair_ryan.remove();
-        backyard.remove();
-        downtown.remove();
-        downtown2.remove();
-        oakridge.remove();
-        plant.remove();
-        fire.remove();
-        van_house.remove();
-        korea_uni.remove();
+    } else if (document.querySelector('.taipei') != null) {
+        document.querySelector('.taipei').remove();
+    } else if (document.querySelector('.skychair_ryan') != null) {
+        document.querySelector('.skychair_ryan').remove();
+    } else if (document.querySelector('.sunset_shot') != null) {
+        document.querySelector('.sunset_shot').remove();
+    } else if (document.querySelector('.backyard') != null) {
+        document.querySelector('.backyard').remove();
+    } else if (document.querySelector('.backyard') != null) {
+        document.querySelector('.downtown').remove();
+    } else if (document.querySelector('.downtown') != null) {
+        document.querySelector('.downtown').remove();
+    } else if (document.querySelector('.downtown2') != null) {
+        document.querySelector('.downtown2').remove();
+    } else if (document.querySelector('.oakridge') != null) {
+        document.querySelector('.oakridge').remove();
+    } else if (document.querySelector('.oakridge') != null) {
+        document.querySelector('.plant').remove();
+    } else if (document.querySelector('.fire') != null) {
+        document.querySelector('.fire').remove();
+    } else if (document.querySelector('.van_house') != null) {
+        document.querySelector('.van_house').remove();
+    } else if (document.querySelector('.korea_uni') != null) {
+        document.querySelector('.korea_uni').remove();
     }
 }
 
