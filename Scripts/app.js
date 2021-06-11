@@ -164,8 +164,8 @@ function imagenullabilityCheck() {
         document.querySelector('.downtown2').remove();
     } else if (document.querySelector('.oakridge') != null) {
         document.querySelector('.oakridge').remove();
-    } else if (document.querySelector('.oakridge') != null) {
-        document.querySelector('.plant').remove();
+    } else if (document.querySelector('.oakridge_plant') != null) {
+        document.querySelector('.oakridge_plant').remove();
     } else if (document.querySelector('.fire') != null) {
         document.querySelector('.fire').remove();
     } else if (document.querySelector('.van_house') != null) {
