@@ -15,6 +15,10 @@ a {
     padding: 16px;
 }
 
+p {
+    font-family: 'Roboto Mono', monospace;
+}
+
 .dark-mode {
     background-color: #4a7b9d;
     color: white;
@@ -37,7 +41,6 @@ h1 {
     width: max-content;
 }
 
-
 h1::before,
 h1::after {
     content: '';
@@ -46,7 +49,10 @@ h1::after {
     right: 0;
     left: 0;
     bottom: 0;
+}
 
+h2 {
+    font-family: 'Roboto Mono', monospace;
 }
 
 .about::before {
@@ -220,7 +226,10 @@ li:visited {
     justify-content: center;
     position: relative;
     z-index: 0;
+    width: 100%;
 }
+
+
 
 .hover {
     object-fit: cover;
@@ -257,27 +266,3 @@ footer {
     padding: 20px;
 }
 
-/* 
-@media screen and (min-width: 640px) {
-    .IU {
-        float: center;
-    }
-    
-    
-    .skychair_ryan {
-        float: center;
-    }
-    /* .container > img:hover {
-        width: 50%;
-        height: 50%;
-    } */
-    
-    /* .downtown {
-        float: center;
-    }
-    
-    
-    .home {
-        float: center;
-    }
-} */ 

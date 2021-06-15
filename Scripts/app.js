@@ -76,48 +76,75 @@ function dropdownMenu() {
 
 function ShotoniPhone() {
     let show = document.querySelector('.show');
+    let container = document.querySelector('.container');
     show.addEventListener('click', (e)=> {
         let image = e.target.innerText;
         e.stopPropagation();
         if (image === 'Taipei') {
             remove_all();
             Taipei_Content();
+            container.style.flexDirection = "column"
+            container.style.alignItems = "center"
         } else if (image === 'All Images') {
             remove_all();
             addimages();
+            container.style.flexDirection = "row"
+            container.style.removeProperty('align-items')
         } else if (image === 'Arbutus') {
             remove_all();
             Arbutus_Content();
+            container.style.alignItems = "center"
+            container.style.flexDirection = "column"
         } else if (image === 'Clock Tower') {
             remove_all();
             ClockTower_Content();
+            container.style.alignItems = "center"
+            container.style.flexDirection = "column"
         } else if (image === 'Skychair') {
             remove_all();
             Skychair_Content();
+            container.style.alignItems = "center"
+            container.style.flexDirection = "column"
         } else if (image === 'Backyard') {
             remove_all();
             Backyard_Content();
+            container.style.alignItems = "center"
+            container.style.flexDirection = "column"
         } else if (image === 'Mount Pleasant Graffiti') {
             remove_all();
             Graffiti_Content();
+            container.style.flexDirection = "column"
+            container.style.alignItems = "center"
         } else if (image === 'Mount Pleasant Apartments') {
             remove_all();
             Apartments_Contents();
+            container.style.flexDirection = "column"
+            container.style.alignItems = "center"
         } else if (image === 'Oakridge View') {
             remove_all();
             Oakridge_Content();
+            container.style.flexDirection = "column"
+            container.style.alignItems = "center"
         } else if (image === 'Plant') {
             remove_all();
             Plant_Content();
+            container.style.flexDirection = "column"
+            container.style.alignItems = "center"
         } else if (image === 'Fire Night') {
             remove_all();
             Fire_Content();
+            container.style.flexDirection = "column"
+            container.style.alignItems = "center"
         } else if (image === 'Vancouver House') {
             remove_all();
             VanHouse_Content();
+            container.style.flexDirection = "column"
+            container.style.alignItems = "center"
         } else if (image === 'Kyung Hee University') {
             remove_all();
             Ko_uni_Content();
+            container.style.flexDirection = "column"
+            container.style.alignItems = "center"
         }
     })
 }
