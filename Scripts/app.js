@@ -206,84 +206,84 @@ function addimages () {
     let container = document.querySelector('.container');
     let taipeiIMG = document.createElement('img');
     taipeiIMG.setAttribute('src', 'Images/taipei.jpeg');
-    taipeiIMG.setAttribute('width', '400');
+    taipeiIMG.setAttribute('width', '500');
     taipeiIMG.setAttribute('alt', 'Rush hour in Taipei');
     taipeiIMG.classList.add('taipei', 'hover');
     container.appendChild(taipeiIMG);
 
     let SunsetIMG = document.createElement('img');
     SunsetIMG.setAttribute('src', 'Images/IMG_2038.jpeg');
-    SunsetIMG.setAttribute('width', '400');
+    SunsetIMG.setAttribute('width', '500');
     SunsetIMG.setAttribute('alt', 'sunset in Vancouver');
     SunsetIMG.classList.add('sunset_shot', 'hover');
     container.appendChild(SunsetIMG);
 
     let ClockIMG = document.createElement('img');
     ClockIMG.setAttribute('src', 'Images/clock.jpeg');
-    ClockIMG.setAttribute('width', '400');
+    ClockIMG.setAttribute('width', '500');
     ClockIMG.setAttribute('alt', 'clock in Vancouver');
     ClockIMG.classList.add('clock', 'hover');
     container.appendChild(ClockIMG);
 
     let RyanIMG = document.createElement('img');
     RyanIMG.setAttribute('src', 'Images/skychair_ryan.jpeg');
-    RyanIMG.setAttribute('width', '400');
+    RyanIMG.setAttribute('width', '500');
     RyanIMG.setAttribute('alt', 'Snowboarding at Cypress');
     RyanIMG.classList.add('skychair_ryan', 'hover');
     container.appendChild(RyanIMG);
 
     let BackyardIMG = document.createElement('img');
     BackyardIMG.setAttribute('src', 'Images/7500_backyard.jpeg');
-    BackyardIMG.setAttribute('width', '400');
+    BackyardIMG.setAttribute('width', '500');
     BackyardIMG.setAttribute('alt', 'Backyard');
     BackyardIMG.classList.add('backyard', 'hover');
     container.appendChild(BackyardIMG);
 
     let DowntownIMG = document.createElement('img');
     DowntownIMG.setAttribute('src', 'Images/Downtown.jpeg');
-    DowntownIMG.setAttribute('width', '400');
+    DowntownIMG.setAttribute('width', '500');
     DowntownIMG.setAttribute('alt', 'Downtown');
     DowntownIMG.classList.add('downtown', 'hover');
     container.appendChild(DowntownIMG);
 
     let Downtown2IMG = document.createElement('img');
     Downtown2IMG.setAttribute('src', 'Images/Downtown2.jpeg');
-    Downtown2IMG.setAttribute('width', '400');
+    Downtown2IMG.setAttribute('width', '500');
     Downtown2IMG.setAttribute('alt', 'Downtown');
     Downtown2IMG.classList.add('downtown2', 'hover');
     container.appendChild(Downtown2IMG);
 
     let OakridgeIMG = document.createElement('img');
     OakridgeIMG.setAttribute('src', 'Images/oakridge.jpeg');
-    OakridgeIMG.setAttribute('width', '400');
+    OakridgeIMG.setAttribute('width', '500');
     OakridgeIMG.setAttribute('alt', 'Oakridge');
     OakridgeIMG.classList.add('oakridge', 'hover');
     container.appendChild(OakridgeIMG);
 
     let PlantIMG = document.createElement('img');
     PlantIMG.setAttribute('src', 'Images/plant.jpeg');
-    PlantIMG.setAttribute('width', '400');
+    PlantIMG.setAttribute('width', '500');
     PlantIMG.setAttribute('alt', 'Oakridge Plant');
     PlantIMG.classList.add('oakridge_plant', 'hover');
     container.appendChild(PlantIMG);
 
     let FireIMG = document.createElement('img');
     FireIMG.setAttribute('src', 'Images/fire.jpeg');
-    FireIMG.setAttribute('width', '400');
+    FireIMG.setAttribute('width', '500');
     FireIMG.setAttribute('alt', 'Fire in Richmond');
     FireIMG.classList.add('fire', 'hover');
     container.appendChild(FireIMG);
 
     let VanHouseIMG = document.createElement('img');
     VanHouseIMG.setAttribute('src', 'Images/van_house.jpeg');
-    VanHouseIMG.setAttribute('width', '400');
+    VanHouseIMG.setAttribute('width', '500');
     VanHouseIMG.setAttribute('alt', 'Vancouver House');
     VanHouseIMG.classList.add('van_house', 'hover');
     container.appendChild(VanHouseIMG);
 
     let KoreaUniIMG = document.createElement('img');
     KoreaUniIMG.setAttribute('src', 'Images/korea_uni.jpeg');
-    KoreaUniIMG.setAttribute('width', '400');
+    KoreaUniIMG.setAttribute('width', '500');
     KoreaUniIMG.setAttribute('alt', 'Kyung Hee University');
     KoreaUniIMG.classList.add('korea_uni', 'hover');
     container.appendChild(KoreaUniIMG);
@@ -300,7 +300,7 @@ function Ko_uni_Content() {
     p.appendChild(p_text);
     let KoreaUniIMG = document.createElement('img');
     KoreaUniIMG.setAttribute('src', 'Images/korea_uni.jpeg');
-    KoreaUniIMG.setAttribute('width', '400');
+    KoreaUniIMG.setAttribute('width', '500');
     KoreaUniIMG.setAttribute('alt', 'Kyung Hee University');
     KoreaUniIMG.classList.add('korea_uni', 'hover');
     container.appendChild(KoreaUniIMG);
@@ -318,7 +318,7 @@ function VanHouse_Content() {
     p.appendChild(p_text);
     let VanHouseIMG = document.createElement('img');
     VanHouseIMG.setAttribute('src', 'Images/van_house.jpeg');
-    VanHouseIMG.setAttribute('width', '400');
+    VanHouseIMG.setAttribute('width', '500');
     VanHouseIMG.setAttribute('alt', 'Vancouver House');
     VanHouseIMG.classList.add('van_house', 'hover');
     container.appendChild(VanHouseIMG);
@@ -337,7 +337,7 @@ function Fire_Content() {
     p.appendChild(p_text);
     let FireIMG = document.createElement('img');
     FireIMG.setAttribute('src', 'Images/fire.jpeg');
-    FireIMG.setAttribute('width', '400');
+    FireIMG.setAttribute('width', '500');
     FireIMG.setAttribute('alt', 'Fire in Richmond');
     FireIMG.classList.add('fire', 'hover');
     container.appendChild(FireIMG);
@@ -356,7 +356,7 @@ function Plant_Content() {
     p.appendChild(p_text);
     let PlantIMG = document.createElement('img');
     PlantIMG.setAttribute('src', 'Images/plant.jpeg');
-    PlantIMG.setAttribute('width', '400');
+    PlantIMG.setAttribute('width', '500');
     PlantIMG.setAttribute('alt', 'Oakridge Plant');
     PlantIMG.classList.add('oakridge_plant', 'hover');
     container.appendChild(PlantIMG);
@@ -376,7 +376,7 @@ function Oakridge_Content() {
     p.appendChild(p_text);
     let OakridgeIMG = document.createElement('img');
     OakridgeIMG.setAttribute('src', 'Images/oakridge.jpeg');
-    OakridgeIMG.setAttribute('width', '400');
+    OakridgeIMG.setAttribute('width', '500');
     OakridgeIMG.setAttribute('alt', 'Oakridge');
     OakridgeIMG.classList.add('oakridge', 'hover');
     container.appendChild(OakridgeIMG);
@@ -396,7 +396,7 @@ function Apartments_Contents() {
     p.appendChild(p_text);
     let Downtown2IMG = document.createElement('img');
     Downtown2IMG.setAttribute('src', 'Images/Downtown2.jpeg');
-    Downtown2IMG.setAttribute('width', '400');
+    Downtown2IMG.setAttribute('width', '500');
     Downtown2IMG.setAttribute('alt', 'Downtown');
     Downtown2IMG.classList.add('downtown2', 'hover');
     container.appendChild(Downtown2IMG);
@@ -415,7 +415,7 @@ function Graffiti_Content() {
     p.appendChild(p_text);
     let DowntownIMG = document.createElement('img');
     DowntownIMG.setAttribute('src', 'Images/Downtown.jpeg');
-    DowntownIMG.setAttribute('width', '400');
+    DowntownIMG.setAttribute('width', '500');
     DowntownIMG.setAttribute('alt', 'Downtown');
     DowntownIMG.classList.add('downtown', 'hover');
     container.appendChild(DowntownIMG);
@@ -434,7 +434,7 @@ function Backyard_Content() {
     p.appendChild(p_text);
     let BackyardIMG = document.createElement('img');
     BackyardIMG.setAttribute('src', 'Images/7500_backyard.jpeg');
-    BackyardIMG.setAttribute('width', '400');
+    BackyardIMG.setAttribute('width', '500');
     BackyardIMG.setAttribute('alt', 'Backyard');
     BackyardIMG.classList.add('backyard', 'hover');
     container.appendChild(BackyardIMG);
@@ -452,7 +452,7 @@ function Skychair_Content() {
     p.appendChild(p_text);
     let RyanIMG = document.createElement('img');
     RyanIMG.setAttribute('src', 'Images/skychair_ryan.jpeg');
-    RyanIMG.setAttribute('width', '400');
+    RyanIMG.setAttribute('width', '500');
     RyanIMG.setAttribute('alt', 'Snowboarding at Cypress');
     RyanIMG.classList.add('skychair_ryan', 'hover');
     container.appendChild(RyanIMG);
@@ -473,7 +473,7 @@ function ClockTower_Content() {
     p.appendChild(p_text);
     let ClockIMG = document.createElement('img');
     ClockIMG.setAttribute('src', 'Images/clock.jpeg');
-    ClockIMG.setAttribute('width', '400');
+    ClockIMG.setAttribute('width', '500');
     ClockIMG.setAttribute('alt', 'clock in Vancouver');
     ClockIMG.classList.add('clock', 'hover');
     container.appendChild(ClockIMG);
@@ -492,7 +492,7 @@ function Arbutus_Content() {
     p.appendChild(p_text);
     let SunsetIMG = document.createElement('img');
     SunsetIMG.setAttribute('src', 'Images/IMG_2038.jpeg');
-    SunsetIMG.setAttribute('width', '400');
+    SunsetIMG.setAttribute('width', '500');
     SunsetIMG.setAttribute('alt', 'sunset in Vancouver');
     SunsetIMG.classList.add('sunset_shot', 'hover');
     container.appendChild(SunsetIMG);
@@ -513,7 +513,7 @@ function Taipei_Content() {
     p.appendChild(p_text);
     let taipeiIMG = document.createElement('img');
     taipeiIMG.setAttribute('src', 'Images/taipei.jpeg');
-    taipeiIMG.setAttribute('width', '400');
+    taipeiIMG.setAttribute('width', '500');
     taipeiIMG.setAttribute('alt', 'Rush hour in Taipei');
     taipeiIMG.classList.add('taipei', 'hover');
     container.appendChild(taipeiIMG);
